@@ -31,6 +31,10 @@ main {
     padding-bottom: 100px;
 }
 
+.hide {
+    display: none !important;
+}
+
 .page-container {
     background-color: #ffffff;
     margin: 0 auto;
@@ -139,6 +143,12 @@ main {
     color: #424242;
     font-weight: 600;
     text-align: center;
+}
+
+.technologies-list__whish-items {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 100px;
 }
 
 .projects__list {

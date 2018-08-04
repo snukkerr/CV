@@ -37,7 +37,7 @@
                     <div class="technologies-list__known technologies-list--selected">
                         <h2 class="title">Tehnlogiile utilizate în realizarea proiectelor</h2>
                         <p class="description">Dețin cunoștințe în tehnologiile date la un nivel: începător-mediu.</p>
-                        <ul class="technologies-list__items">
+                        <ul class="technologies-list__items tab">
                             <li class="technologies-list__item">
                                 <img class="technologies-list__img" src="images/html5.svg" alt="html5-logo">
                                 <p class="technologies-list__name">HTML5</p>
@@ -61,6 +61,21 @@
                             <li class="technologies-list__item">
                                 <img class="technologies-list__img" src="images/ps.svg" alt="photoshop-logo">
                                 <p class="technologies-list__name">Photoshop</p>
+                            </li>
+                        </ul>
+
+                        <ul class="technologies-list__whish-items hide tab">
+                            <li class="technologies-list__item">
+                                <img class="technologies-list__img" src="images/nodejs.svg" alt="html5-logo">
+                                <p class="technologies-list__name">Node.js</p>
+                            </li>
+                            <li class="technologies-list__item">
+                                <img class="technologies-list__img" src="images/mongodb.svg" alt="css3-logo">
+                                <p class="technologies-list__name">MongoDB</p>
+                            </li>
+                            <li class="technologies-list__item">
+                                <img class="technologies-list__img" src="images/react.svg" alt="javascript-logo">
+                                <p class="technologies-list__name">React</p>
                             </li>
                         </ul>
                     </div>
@@ -89,5 +104,30 @@
             </section>
         </main>
     </div>
+
+    <script>
+        const tabs = document.getElementsByClassName('technologies__tab');
+        const lists = document.getElementsByClassName('tab');
+        
+        const toggleDisplay = e => {
+            console.log('outer');
+            if (e.target === tabs[0] && lists[0].classList.contains('hide')) {
+                console.log('cunostinte');
+                lists[0].classList.toggle('hide');
+                lists[1].classList.toggle('hide');
+                tabs[0].classList.toggle('technologies__tab--selected');
+                tabs[1].classList.toggle('technologies__tab--selected');
+            } else if (e.target === tabs[1] && lists[1].classList.contains('hide')) {
+                console.log('interese');
+                lists[0].classList.toggle('hide');
+                lists[1].classList.toggle('hide');
+                tabs[0].classList.toggle('technologies__tab--selected');
+                tabs[1].classList.toggle('technologies__tab--selected');
+            }
+        };
+
+        tabs[0].addEventListener('click', toggleDisplay);
+        tabs[1].addEventListener('click', toggleDisplay);
+    </script>
 </body>
 </html>
