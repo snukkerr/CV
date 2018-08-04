@@ -325,6 +325,44 @@ ul {
     width: 335px;
 }
 
+.developers__huffpost {
+    background-color: #ffffff;
+    background-image: url('images/huffpost.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    content: '';
+    height: 175px;
+    position: absolute;
+    right: -400px;
+    top: 0;
+    width: 175px;
+}
+
+.developers__huffpost::before {
+    border: 1px solid #e4f2ff;
+    border-radius: 100%;
+    content: '';
+    height: 235px;
+    left: -30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 235px;
+}
+
+.developers__huffpost::after {
+    border: 1px solid #e4f2ff;
+    border-radius: 100%;
+    content: '';
+    height: 295px;
+    left: -60px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 295px;
+}
+
 .investment {
     padding: 230px 0 250px;
 }
@@ -388,6 +426,8 @@ ul {
     align-items: center;
     display: flex;
     height: inherit;
+    justify-content: space-around;
+    text-align: center;
 }
 
 .real-estate__title {
