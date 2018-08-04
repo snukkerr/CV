@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a,
+h1,
+h2,
+h3,
+p {
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+main {
+    padding-bottom: 100px;
+}
+
+.page-container {
+    background-color: #ffffff;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.content-container {
+    margin: 0 auto;
+    width: 1100px;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.description {
+    color: #6e6e6e;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 120px;
+}
+
+.header__mail {
+    color: #565656;
+}
+
+.me {
+    align-items: center;
+    display: flex;
+    margin-bottom: 30px;
+    padding-top: 100px;
+}
+
+.me__name {
+    font-size: 48px;
+    margin-right: 45px;
+}
+
+.me__skill {
+    background-color: #4486f7;
+    border-radius: 5px;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+.me__skill:first-child {
+    letter-spacing: 0.025em;
+    margin-right: 20px;
+}
+
+.technologies {
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 80px;
+}
+
+.technologies__tabs {
+    align-content: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.technologies__tab {
+    color: #999999;
+    cursor: pointer;
+    flex-grow: 1;
+    font-size: 18px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.technologies__tab--selected {
+    border-bottom: 2px solid #4486f7;
+    color: #000000;
+}
+
+.technologies-list__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 100px;
+}
+
+.technologies-list__item {
+    align-items: center;
+    display: flex;
+    flex: 1 0 33.3%;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+.technologies-list__img {
+    margin-bottom: 25px;
+    max-height: 72px;
+}
+
+.technologies-list__name {
+    color: #424242;
+    font-weight: 600;
+    text-align: center;
+}
+
+.projects__list {
+    display: flex;
+    width: 100%;
+}
+
+.projects__project {
+    padding: 0 20px;
+    width: 50%;
+}
+
+.projects__img {
+    background-position: center;
+    background-size: 100%;
+    margin-bottom: 50px;
+    height: 220px;
+    max-width: 510px;
+}
+
+.projects__title {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.projects__description {
+    line-height: 24px;
+    margin-bottom: 50px;
+}
+
+.projects__link {
+    color: #4486f7;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+}
